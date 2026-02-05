@@ -1,0 +1,222 @@
+<!--
+INSTRUCTIONS TO USE:
+
+1. Create a Google Apps Script:
+   - Go to https://script.google.com
+   - New Project → paste the Apps Script code below (AFTER the HTML).
+   - Deploy → Web App → Execute as Me → Access: Anyone.
+   - Copy the Web App URL.
+
+2. Replace YOUR_WEB_APP_URL in this HTML fetch() call.
+
+3. Host this HTML file anywhere (school LMS, GitHub Pages, etc.)
+
+=====================================================
+HTML TEST FORM
+=====================================================
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Scandal in Bohemia — Chapter 2 Test</title>
+<style>
+body {font-family: Arial; max-width: 800px; margin: auto; padding: 20px;}
+h1 {text-align: center;}
+.question {margin: 15px 0;}
+button {padding: 10px 20px; font-size: 16px;}
+.result {font-size: 20px; font-weight: bold; margin-top: 20px;}
+</style>
+</head>
+<body>
+
+<h1>Chapter 2 Test — A Scandal in Bohemia</h1>
+
+<form id="quizForm">
+
+<h3>Student Information</h3>
+<input name="name" placeholder="Name" required><br><br>
+<input name="surname" placeholder="Surname" required><br><br>
+<input name="group" placeholder="Group Number" required><br><br>
+
+<!-- QUESTIONS -->
+
+<div class="question">
+1. Why does Watson visit Holmes?<br>
+<label><input type="radio" name="q1" value="A"> Holmes invited him urgently</label><br>
+<label><input type="radio" name="q1" value="B"> He wants news about the case</label><br>
+<label><input type="radio" name="q1" value="C"> He needs medical advice</label><br>
+<label><input type="radio" name="q1" value="D"> He brings a letter</label>
+</div>
+
+<div class="question">
+2. What disguise did Holmes use?<br>
+<label><input type="radio" name="q2" value="A"> Priest</label><br>
+<label><input type="radio" name="q2" value="B"> Groom</label><br>
+<label><input type="radio" name="q2" value="C"> Lawyer</label><br>
+<label><input type="radio" name="q2" value="D"> Journalist</label>
+</div>
+
+<div class="question">
+3. Where does Irene Adler live?<br>
+<label><input type="radio" name="q3" value="A"> Baker Street</label><br>
+<label><input type="radio" name="q3" value="B"> Inner Temple</label><br>
+<label><input type="radio" name="q3" value="C"> Briony Lodge</label><br>
+<label><input type="radio" name="q3" value="D"> Regent Street</label>
+</div>
+
+<div class="question">
+4. Who frequently visits Irene Adler?<br>
+<label><input type="radio" name="q4" value="A"> The King</label><br>
+<label><input type="radio" name="q4" value="B"> Watson</label><br>
+<label><input type="radio" name="q4" value="C"> Godfrey Norton</label><br>
+<label><input type="radio" name="q4" value="D"> Police officer</label>
+</div>
+
+<div class="question">
+5. Who is Godfrey Norton?<br>
+<label><input type="radio" name="q5" value="A"> Detective</label><br>
+<label><input type="radio" name="q5" value="B"> Journalist</label><br>
+<label><input type="radio" name="q5" value="C"> Lawyer</label><br>
+<label><input type="radio" name="q5" value="D"> Nobleman</label>
+</div>
+
+<div class="question">
+6. What unexpected event happens?<br>
+<label><input type="radio" name="q6" value="A"> Robbery</label><br>
+<label><input type="radio" name="q6" value="B"> Departure from London</label><br>
+<label><input type="radio" name="q6" value="C"> Wedding</label><br>
+<label><input type="radio" name="q6" value="D"> Scandal</label>
+</div>
+
+<div class="question">
+7. What time does Irene usually go out?<br>
+<label><input type="radio" name="q7" value="A"> Morning</label><br>
+<label><input type="radio" name="q7" value="B"> Around 5 pm</label><br>
+<label><input type="radio" name="q7" value="C"> Midnight</label><br>
+<label><input type="radio" name="q7" value="D"> Noon</label>
+</div>
+
+<div class="question">
+8. How does Holmes describe Irene?<br>
+<label><input type="radio" name="q8" value="A"> Careless</label><br>
+<label><input type="radio" name="q8" value="B"> Intelligent</label><br>
+<label><input type="radio" name="q8" value="C"> Frightened</label><br>
+<label><input type="radio" name="q8" value="D"> Weak</label>
+</div>
+
+<div class="question">
+9. Where does Holmes think the photo is hidden?<br>
+<label><input type="radio" name="q9" value="A"> Bank</label><br>
+<label><input type="radio" name="q9" value="B"> Palace</label><br>
+<label><input type="radio" name="q9" value="C"> Her house</label><br>
+<label><input type="radio" name="q9" value="D"> Office</label>
+</div>
+
+<div class="question">
+10. Why is the photo important?<br>
+<label><input type="radio" name="q10" value="A"> Money</label><br>
+<label><input type="radio" name="q10" value="B"> Reputation of the King</label><br>
+<label><input type="radio" name="q10" value="C"> Art value</label><br>
+<label><input type="radio" name="q10" value="D"> Family memory</label>
+</div>
+
+<div class="question">
+11. Who helps Holmes in the evening?<br>
+<label><input type="radio" name="q11" value="A"> King</label><br>
+<label><input type="radio" name="q11" value="B"> Watson</label><br>
+<label><input type="radio" name="q11" value="C"> Police</label><br>
+<label><input type="radio" name="q11" value="D"> Irene</label>
+</div>
+
+<div class="question">
+12. Holmes observes Irene mainly because:<br>
+<label><input type="radio" name="q12" value="A"> Curiosity</label><br>
+<label><input type="radio" name="q12" value="B"> Case investigation</label><br>
+<label><input type="radio" name="q12" value="C"> Friendship</label><br>
+<label><input type="radio" name="q12" value="D"> Travel</label>
+</div>
+
+<div class="question">
+13. Holmes respects Irene because she is:<br>
+<label><input type="radio" name="q13" value="A"> Rich</label><br>
+<label><input type="radio" name="q13" value="B"> Famous</label><br>
+<label><input type="radio" name="q13" value="C"> Clever</label><br>
+<label><input type="radio" name="q13" value="D"> Powerful</label>
+</div>
+
+<div class="question">
+14. Holmes gathers information mainly by:<br>
+<label><input type="radio" name="q14" value="A"> Newspapers</label><br>
+<label><input type="radio" name="q14" value="B"> Disguise observation</label><br>
+<label><input type="radio" name="q14" value="C"> Letters</label><br>
+<label><input type="radio" name="q14" value="D"> Telephone</label>
+</div>
+
+<div class="question">
+15. The main goal of Holmes is to:<br>
+<label><input type="radio" name="q15" value="A"> Arrest Irene</label><br>
+<label><input type="radio" name="q15" value="B"> Take the photograph</label><br>
+<label><input type="radio" name="q15" value="C"> Meet the King</label><br>
+<label><input type="radio" name="q15" value="D"> Write a report</label>
+</div>
+
+<button type="submit">Submit Test</button>
+
+</form>
+
+<div id="result" class="result"></div>
+
+<script>
+const correctAnswers = {
+q1:'B', q2:'B', q3:'C', q4:'C', q5:'C', q6:'C',
+q7:'B', q8:'B', q9:'C', q10:'B', q11:'B',
+q12:'B', q13:'C', q14:'B', q15:'B'
+};
+
+document.getElementById('quizForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
+
+  let score = 0;
+  Object.keys(correctAnswers).forEach(q => {
+    if(data[q] === correctAnswers[q]) score++;
+  });
+
+  document.getElementById('result').innerHTML =
+    `Your score: ${score}/15 (${Math.round((score/15)*100)}%)`;
+
+  fetch("YOUR_WEB_APP_URL", {
+    method: "POST",
+    body: JSON.stringify({...data, score}),
+    headers: {"Content-Type": "application/json"}
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!-- GOOGLE APPS SCRIPT BACKEND -->
+<!--
+function doPost(e) {
+  var sheet = SpreadsheetApp.openById("1DwIHT9b9nqHQruFuBseQzfQhmclsi1cH3chCaLvDm5E").getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+
+  sheet.appendRow([
+    new Date(),
+    data.name,
+    data.surname,
+    data.group,
+    data.q1,data.q2,data.q3,data.q4,data.q5,
+    data.q6,data.q7,data.q8,data.q9,data.q10,
+    data.q11,data.q12,data.q13,data.q14,data.q15,
+    data.score
+  ]);
+
+  return ContentService.createTextOutput("Success");
+}
+-->
